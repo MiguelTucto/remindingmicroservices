@@ -1,4 +1,4 @@
-package com.upc.pe.practicing.domain.model.service;
+package com.upc.pe.practicing.domain.service;
 
 import com.upc.pe.practicing.domain.model.entity.Client;
 import org.springframework.data.domain.Page;
