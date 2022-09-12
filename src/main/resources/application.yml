@@ -1,26 +1,32 @@
 server:
   port: 8891
 spring:
-  h2:
-    console:
-      enabled: true
-      path: /h2-console
+  #h2:
+    #console:
+      #enabled: true
+      #path: /h2-console
   datasource:
-    driver-class-name: org.h2.Driver
-    url: jdbc:h2:file:~/data/clientDB;
-    username: sa
-    password: admin
+    driver-class-name: org.postgresql.Driver
+    url: postgres://ocnohfpvcmegfx:26a8fe38f4be31f8e2b9048b0baf47d1674d3582d6e9e7f5b3c7b14690202b9c@ec2-35-168-122-84.compute-1.amazonaws.com:5432/dbef637bg854d9
+    #jdbc:h2:file:~/data/clientDB;
+    username: ocnohfpvcmegfx
+    #sa
+    password: 26a8fe38f4be31f8e2b9048b0baf47d1674d3582d6e9e7f5b3c7b14690202b9c
+    #admin
   jpa:
-    database: h2
+    database: postgresql
+    #h2
     hibernate:
       ddl-auto: update
     show_sql: true
-    database-platform: org.hibernate.dialect.H2Dialect
+    #database-platform: org.hibernate.dialect.H2Dialect
+    #org.hibernate.dialect.H2Dialect
     properties:
       hibernate:
         show_sql: true
         use_sql_comments: false
         format_sql: false
+        dialect: org.hibernate.dialect.PostgreSQLDialect
 springdoc:
   swagger-ui:
     path: /swagger-ui
