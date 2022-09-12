@@ -7,6 +7,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import javax.xml.transform.Source;
 
 @Getter
 @Setter
@@ -61,4 +62,5 @@ public class Client extends AuditModel {
     @Size(max = 50)
     @Column(unique = true)
     private String event;
+
 }
