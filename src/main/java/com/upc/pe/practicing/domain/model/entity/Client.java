@@ -7,7 +7,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import javax.xml.transform.Source;
+
 
 @Getter
 @Setter
@@ -39,16 +39,10 @@ public class Client extends AuditModel {
     @Column(unique = true)
     private String address;
 
-    @NotNull
-    @NotBlank
-    @Size(max = 10)
-    @Column(unique = true)
+
     private int phone;
 
-    @NotNull
-    @NotBlank
-    @Size(max = 3)
-    @Column(unique = true)
+
     private int age;
 
     @NotNull

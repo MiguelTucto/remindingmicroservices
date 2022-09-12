@@ -27,14 +27,10 @@ public class UpdateClientResource {
     @Size(max = 50)
     private String address;
 
-    @NotNull
-    @NotBlank
-    @Size(max = 10)
+
     private int phone;
 
-    @NotNull
-    @NotBlank
-    @Size(max = 3)
+
     private int age;
 
     @NotNull
