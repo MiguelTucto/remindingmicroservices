@@ -8,10 +8,16 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     url: postgres://ocnohfpvcmegfx:26a8fe38f4be31f8e2b9048b0baf47d1674d3582d6e9e7f5b3c7b14690202b9c@ec2-35-168-122-84.compute-1.amazonaws.com:5432/dbef637bg854d9
+    #jdbc:postgresql://localhost:5432/clientDB
+    #postgres://ocnohfpvcmegfx:26a8fe38f4be31f8e2b9048b0baf47d1674d3582d6e9e7f5b3c7b14690202b9c@ec2-35-168-122-84.compute-1.amazonaws.com:5432/dbef637bg854d9
     #jdbc:h2:file:~/data/clientDB;
     username: ocnohfpvcmegfx
+    #postgres
+    #ocnohfpvcmegfx
     #sa
     password: 26a8fe38f4be31f8e2b9048b0baf47d1674d3582d6e9e7f5b3c7b14690202b9c
+    #password
+    #26a8fe38f4be31f8e2b9048b0baf47d1674d3582d6e9e7f5b3c7b14690202b9c
     #admin
   jpa:
     database: postgresql
