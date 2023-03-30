@@ -1,5 +1,5 @@
-server:
-  port: 8891
+#server:
+  #port: 8891
 spring:
   #h2:
     #console:
@@ -9,15 +9,15 @@ spring:
     driver-class-name: org.postgresql.Driver
     #driver-class-name: org.h2.Driver
     #url: postgres://ocnohfpvcmegfx:26a8fe38f4be31f8e2b9048b0baf47d1674d3582d6e9e7f5b3c7b14690202b9c@ec2-35-168-122-84.compute-1.amazonaws.com:5432/dbef637bg854d9
-    url: jdbc:postgresql://sa-east-1.2945b742-34f8-4514-92bd-ff2acd7cedf0.aws.ybdb.io:5433/yugabyte
+    url: ${DB_URL}
     #url: jdbc:h2:file:~/data/clientDB;
     #postgres://ocnohfpvcmegfx:26a8fe38f4be31f8e2b9048b0baf47d1674d3582d6e9e7f5b3c7b14690202b9c@ec2-35-168-122-84.compute-1.amazonaws.com:5432/dbef637bg854d9
     #jdbc:h2:file:~/data/clientDB;
     #username: ocnohfpvcmegfx
     #username: sa
     #password: admin
-    username: admin
-    password: pdhS4ypNQtmMNvtcC6mvyKqd5jd7HK
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
     #postgres
     #ocnohfpvcmegfx
     #sa
